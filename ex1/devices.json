@@ -1,0 +1,11 @@
+{
+    "Devices": [
+        {
+            "id": 1,
+            "name": "Пылесос",
+            "process": "Пылесосить",
+            "is_on": false,
+            "access": "123"
+        }
+    ]
+}
