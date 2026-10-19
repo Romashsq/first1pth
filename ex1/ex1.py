@@ -56,6 +56,7 @@ class SmartDevice:
         if os.path.exists(FILE_NAME):
             new_device_dict = new_device.to_dict()
             data = cls.r_json()
+            data['Devices']
             with open(FILE_NAME, 'w', encoding='utf-8'):
                 new_device_dict = new_device.to_dict()
                 

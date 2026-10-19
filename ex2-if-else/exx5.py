@@ -72,6 +72,9 @@ for age, is_authenticated, is_active, is_blocked, is_premium, is_admin, command 
 '9 unknown command'
 '10 user homework - success'
 
+
+
+
 #18 Аналіз помилок
 age = 20
 if age == 18:
@@ -108,6 +111,8 @@ permissions = 3
 if permissions & 2:
     print("Є дозвіл WRITE")
 'permissions and 2 is always 2 if permissions not 0, it does not check bit, & 2 checks bit 0010'
+
+
 
 #19 Самостійне проєктування алгоритму
 KITCHEN = 1
