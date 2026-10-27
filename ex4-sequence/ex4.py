@@ -68,3 +68,40 @@ def dif_groups(text):
 
 
 print(dif_groups(text)['host'])
+
+
+hash_set = set()
+hash_set.add('Roman')
+hash_set.add('Katya')
+hash_set.add('Nastya')
+hash_set.add('Vova')
+hash_set.add('Vova')
+hash_set.add('Vova')
+hash_set.add('Vova')
+hash_set.add('Vlad')
+print(hash_set)
+
+
+
+orders = [
+    {"guest": "Roman", "dish": "pizza"},
+    {"guest": "Katya", "dish": "pasta"},
+    {"guest": "Roman", "dish": "salad"},
+]
+
+guests = set()
+for order in orders:
+    guests.add(order["guest"])
+
+print(guests)   # Roman, Katya
+
+
+coffee = ["Roman", "Katya", "Vova", "Masha", "Roman"]
+tea = ["Katya", "Vlad", "Masha", "Nastya", "Vlad"]
+
+coffee_set = set(coffee)
+tea_set = set(tea)
+
+print(coffee_set & tea_set)        # пили и то, и другое
+print(coffee_set - tea_set)        # пили только кофе
+print(len(coffee_set | tea_set))   # сколько всего разных гостей
