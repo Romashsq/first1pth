@@ -19,7 +19,7 @@ from collections import defaultdict, Counter, ChainMap, OrderedDict
 # пока не найдёт нужный ключ или пустую ячейку.
 
 
-# Задание 1. set
+# 1
 day1_users = ["alice", "bob", "charlie", "david", "alice", "eva"]
 day2_users = ["bob", "frank", "eva", "george", "charlie", "charlie"]
 
@@ -31,7 +31,7 @@ print("Оба дня:", set1 & set2)
 print("Только первый день:", set1 - set2)
 
 
-# Задание 2. frozenset
+# 2
 orders = [
     ["хліб", "молоко"],
     ["молоко", "хліб"],
@@ -45,7 +45,7 @@ for order in orders:
 print("Уникальных наборов:", len(unique_orders))
 
 
-# Задание 3. defaultdict
+# 3
 orders_data = [
     ("Електроніка", "Ноутбук"),
     ("Їжа", "Яблуко"),
@@ -61,7 +61,7 @@ for category, item in orders_data:
 print(dict(groups))
 
 
-# Задание 4. Counter
+# 4
 text = "python python java python c++ java python c++ javascript"
 
 languages = Counter(text.split())
@@ -69,7 +69,7 @@ print(languages)
 print("Топ-2:", languages.most_common(2))
 
 
-# Задание 5. ChainMap
+# 5
 default_config = {"theme": "light", "language": "uk", "font_size": 12}
 user_config = {"theme": "dark", "font_size": 16}
 
@@ -79,7 +79,7 @@ print("font_size:", config["font_size"])
 print("language:", config["language"])
 
 
-# Задание 6. OrderedDict
+# 6
 data = OrderedDict([("a", 1), ("b", 2), ("c", 3), ("d", 4)])
 
 data.move_to_end("a")
